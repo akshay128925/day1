@@ -1,0 +1,140 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2d3e50;
+    color: white;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #2d3e50;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Task Management */
+.task-list {
+    margin-bottom: 15px;
+}
+
+.task-list ul {
+    list-style: none;
+}
+
+.task-list li {
+    background-color: #efefef;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Task Title Styles */
+.task-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.task-description {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Overdue Task Styles */
+.task-overdue {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.task-overdue .task-title {
+    text-decoration: underline;
+}
+
+/* Completed Task Styles */
+.task-completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-completed .task-title {
+    color: green;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}

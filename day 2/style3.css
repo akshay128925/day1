@@ -1,0 +1,21 @@
+#car1{
+padding-left: 40px;
+position: relative;
+
+}
+#car2{
+    padding: 30%,30%,30%,30%;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 8px;
+    
+    }
+    #car3{
+        padding: 30%,40%,50%,60%;
+        position: relative;
+        
+        }
+        #hi{
+            border: 2px solid black;
+            border-radius: 8px;
+        }

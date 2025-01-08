@@ -1,0 +1,165 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Pricing Table Layout */
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pricing-card {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card .pricing-header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.pricing-card .pricing-price {
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.pricing-card .price-symbol {
+    font-size: 18px;
+}
+
+.pricing-card .price-amount {
+    font-size: 48px;
+}
+
+.pricing-card .price-period {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Toggle Button for Monthly/Yearly */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.toggle-label {
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-input:checked + .pricing-table .pricing-card .price-amount {
+    /* Switch pricing to yearly for the Pro tier when checked */
+    --price: calc(var(--price) * 12);
+    content: attr(data-yearly-price);
+}
+
+.toggle-input:checked + .pricing-table .pricing-card .price-period {
+    content: "/yr";
+}
+
+.toggle-input:not(:checked) + .pricing-table .pricing-card .price-amount {
+    --price: 19;
+}
+
+.toggle-input:not(:checked) + .pricing-table .pricing-card .price-period {
+    content: "/mo";
+}
+
+/* Pro Tier Highlight */
+.pro-tier {
+    border: 3px solid #007BFF;
+    background-color: #f0f8ff;
+}
+
+.pro-tier .recommended {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6600;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+/* Tooltip for Features */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}

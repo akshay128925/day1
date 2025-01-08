@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity App</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Productivity Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tasks">Tasks</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#collaboration">Collaboration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="tasks">
+            <div class="container">
+                <h2>Task Management</h2>
+                <div class="task-list">
+                    <ul id="taskList">
+                        <!-- Tasks will be added here manually -->
+
+                        <!-- Example Overdue Task -->
+                        <li class="task-overdue">
+                            <div class="task-title">Overdue Task 1</div>
+                            <div class="task-description">This task is overdue and should be completed immediately.</div>
+                        </li>
+
+                        <!-- Example Completed Task -->
+                        <li class="task-completed">
+                            <div class="task-title">Completed Task 1</div>
+                            <div class="task-description">This task has been completed.</div>
+                        </li>
+
+                        <!-- Example Normal Task -->
+                        <li>
+                            <div class="task-title">Task 1</div>
+                            <div class="task-description">This task is pending.</div>
+                        </li>
+
+                        <!-- Example Overdue Task -->
+                        <li class="task-overdue">
+                            <div class="task-title">Overdue Task 2</div>
+                            <div class="task-description">Another overdue task.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="container">
+                <h2>Calendar Integration</h2>
+                <div id="calendarDisplay">
+                    <p>Calendar will be displayed here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="collaboration">
+            <div class="container">
+                <h2>Real-Time Collaboration</h2>
+                <div class="collaboration-chat">
+                    <div class="messages" id="messageContainer">
+                        <p>No messages yet...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Productivity App | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

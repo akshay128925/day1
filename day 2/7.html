@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pricing Table</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+
+    <div class="pricing-container">
+        <!-- Pricing Toggle (Monthly/Yearly) -->
+        <div class="toggle-container">
+            <label for="toggle-pricing" class="toggle-label">Switch to Yearly Pricing</label>
+            <input type="checkbox" id="toggle-pricing" class="toggle-input">
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="pricing-table">
+            <!-- Pricing Tier: Basic -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Basic</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-amount">199</span>
+                    <span class="price-symbol" style="--price: 19;">rupees</span>
+                    <span class="price-period">/Monthly</span>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li class="tooltip">mobile <span class="tooltip-text">Basic feature</span></li>
+                        <li class="tooltip">720p<span class="tooltip-text">Standard feature</span></li>
+                        <li class="tooltip">add free <span class="tooltip-text">Limited feature</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pricing Tier: Pro (Highlighted as Recommended) -->
+            <div class="pricing-card pro-tier">
+                <div class="pricing-header">
+                    <h3>Pro</h3>
+                    <span class="recommended">Recommended</span>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-amount">499</span>
+                    <span class="price-symbol" style="--price: 49;">rupees</span>
+                    <span class="price-period">/Monthly</span>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li class="tooltip"> mobile <span class="tooltip-text">Basic feature</span></li>
+                        <li class="tooltip">1080p <span class="tooltip-text">Standard feature</span></li>
+                        <li class="tooltip">pc<span class="tooltip-text">Premium feature</span></li>
+                        <li class="tooltip">tv<span class="tooltip-text">Advanced feature</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pricing Tier: Premium -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Premium</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-amount">699</span>
+                    <span class="price-symbol" style="--price: 99;">rupees</span>
+                    <span class="price-period">/Monthly</span>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li class="tooltip">mobile<span class="tooltip-text">Basic feature</span></li>
+                        <li class="tooltip">pc <span class="tooltip-text">Standard feature</span></li>
+                        <li class="tooltip">tv <span class="tooltip-text">Premium feature</span></li>
+                        <li class="tooltip">uhd <span class="tooltip-text">Advanced feature</span></li>
+                        <li class="tooltip">add free <span class="tooltip-text">Exclusive feature</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

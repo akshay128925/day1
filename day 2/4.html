@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Matrix of Images with Borders</title>
+    <style>
+        /* Container for the images */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+            gap: 10px; /* Adds spacing between images */
+            max-width: 600px; /* Max width of the entire grid */
+            margin: 0 auto; /* Centers the grid */
+        }
+
+        /* Styling for each image */
+        .image-grid img {
+            width: 100%; /* Makes each image fill its grid cell */
+            height: auto; /* Maintains aspect ratio */
+            border: 2px solid black; /* Adds a border around each image */
+            border-radius: 8px; /* Optional: Adds rounded corners */
+        }
+    </style>
+</head>
+<body>
+
+   
+
+    <div class="image-grid">
+        <img src="car.jpg" alt="Image 1">
+        <img src="chev.jpg" alt="Image 2">
+        <img src="car.jpg" alt="Image 3">
+        <img src="chev.jpg" alt="Image 4">
+        <img src="car.jpg" alt="Image 5">
+        <img src="chev.jpg" alt="Image 6">
+        <img src="car.jpg" alt="Image 7">
+        <img src="chev.jpg" alt="Image 8">
+        <img src="car.jpg" alt="Image 9">
+    </div>
+
+</body>
+</html>
